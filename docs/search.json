@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "notebooks/Test Notebook.html",
+    "href": "notebooks/Test Notebook.html",
+    "title": "./",
+    "section": "",
+    "text": "The first step for this project is to identify an optimal \\(\\omega\\) for the SOR algorithm. According to https://crunchingnumbers.live/2017/07/09/iterative-methods-part-2/ the optimal choice for our problem is given by \\(\\omega=\\frac{2}{1+sin(h\\pi)}\\) where h is the distance between mesh points. Given that \\(h=\\frac{1}{N+1}=\\frac{1}{51}\\) we can compute that the optimal \\(\\omega\\approx 1.8840\\)\nRunning our code yields the following results Note: the y-axis repesents the error calculated using the 2-norm and the x-axis measures the number of iterations.  From this we can see that: SOR converges in \\(\\approx100\\) iterations Gauss-Seidel converges in \\(\\approx400\\) iterations Jacobi converges in \\(\\approx800\\) iterations Clearly SOR converges significantly faster than the other 2 iterative methods for this particular problem.\nAnother issue we want to consider is how our optimal choice of \\(\\omega\\) performs compared to other non optimal choices. To do this we will first consider the problem above using the same parameters for \\(\\alpha\\),\\(\\beta\\), but looking at a few “nearby” values of \\(\\omega\\) for different values of \\(N\\). Note: the y-axis repesents the error calculated using the 2-norm and the x-axis measures the number of iterations. | | | | :-: | :-: | |  |  |  | \nWhat this shows is that when fewer mesh points \\(N\\) are used to approximate the function, we do not observe a strong benefit in using the optimal \\(\\omega\\). However, as we increase the number of mesh points we can observe that our optimal choice of \\(\\omega\\) is performing noticeably better than the other “nearby” values of \\(\\omega\\)."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "./",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  }
+]
