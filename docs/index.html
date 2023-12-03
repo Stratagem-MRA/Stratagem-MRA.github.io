@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Learning Deep Learning - Welcome</title>
+<title>Learning Deep Learning Deeply - Welcome</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,6 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -59,7 +61,38 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -72,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Learning Deep Learning</span>
+    <span class="navbar-title">Learning Deep Learning Deeply</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -80,65 +113,220 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Home</span></a>
-  </li>  
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/Stratagem-MRA" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/MatthewAgers_" rel="" target=""><i class="bi bi-twitter" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
 </ul>
-            <div class="quarto-navbar-tools ms-auto">
+            <div class="quarto-navbar-tools">
 </div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Welcome</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Debugging">Debugging <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Notebook">Notebook <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Project Summary">Project Summary <span class="quarto-category-count">(1)</span></div><div class="category" data-category="fastai Chapter 1">fastai Chapter 1 <span class="quarto-category-count">(4)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Welcome</h1>
+
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Debugging,fastai Chapter 1" data-listing-date-sort="1701327720000" data-listing-file-modified-sort="1701635449123" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="./posts/Chapter1/Datablocks/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
 </div>
+<div class="body">
+<a href="./posts/Chapter1/Datablocks/index.html">
+<h3 class="no-anchor listing-title">
+Datablocks vs Dataloaders
+</h3>
+<div class="listing-subtitle">
 
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Debugging'); return false;">
+Debugging
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('fastai Chapter 1'); return false;">
+fastai Chapter 1
+</div>
+</div>
+<a href="./posts/Chapter1/Datablocks/index.html">
+<div class="listing-description">
+The first chapter of the fastai course goes over the building blocks of the library and how to use them to make deep learning models. The DataLoader class is a fastai…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/Chapter1/Datablocks/index.html">
+<div class="listing-date">
+Nov 30, 2023
+</div>
+<div class="listing-author">
+Matthew Agers
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Debugging,fastai Chapter 1" data-listing-date-sort="1701327660000" data-listing-file-modified-sort="1701635487057" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="./posts/Chapter1/Multiprocessing/index.html"> <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div> </a></p>
+</div>
+<div class="body">
+<a href="./posts/Chapter1/Multiprocessing/index.html">
+<h3 class="no-anchor listing-title">
+Multiprocessing In Ipython Kernel
+</h3>
+<div class="listing-subtitle">
 
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Debugging'); return false;">
+Debugging
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('fastai Chapter 1'); return false;">
+fastai Chapter 1
+</div>
+</div>
+<a href="./posts/Chapter1/Multiprocessing/index.html">
+<div class="listing-description">
+For this project I needed to generate roughly 8 million images of chess boards from the move lists of the games I had downloaded. Using the python chess library I iterated…
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/Chapter1/Multiprocessing/index.html">
+<div class="listing-date">
+Nov 30, 2023
+</div>
+<div class="listing-author">
+Matthew Agers
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Notebook,fastai Chapter 1" data-listing-date-sort="1701327540000" data-listing-file-modified-sort="1701635525591" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./posts/Chapter1/Notebook/Lichess.html"> <p class="card-img-top"><img src="posts\Chapter1\Notebook\Lichess_files\figure-html\cell-6-output-2.png"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="./posts/Chapter1/Notebook/Lichess.html">
+<h3 class="no-anchor listing-title">
+Lichess ELO Guesser Notebook
+</h3>
+<div class="listing-subtitle">
 
-<div class="quarto-title-meta">
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Notebook'); return false;">
+Notebook
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('fastai Chapter 1'); return false;">
+fastai Chapter 1
+</div>
+</div>
+<a href="./posts/Chapter1/Notebook/Lichess.html">
+<div class="listing-description">
 
-    
-  
-    
-  </div>
-  
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/Chapter1/Notebook/Lichess.html">
+<div class="listing-date">
+Nov 30, 2023
+</div>
+<div class="listing-author">
+Matthew Agers
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Project Summary,fastai Chapter 1" data-listing-date-sort="1701327480000" data-listing-file-modified-sort="1701635540644" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
+<div class="thumbnail">
+<p><a href="./posts/Chapter1/Writeup/index.html"> <p class="card-img-top"><img src="posts\Chapter1\Writeup\thumbnail.png"  class="thumbnail-image card-img"/></p> </a></p>
+</div>
+<div class="body">
+<a href="./posts/Chapter1/Writeup/index.html">
+<h3 class="no-anchor listing-title">
+Lichess ELO Guesser
+</h3>
+<div class="listing-subtitle">
 
-</header>
-
-<p>
-Please excuse the mess. Improvements coming soon!
-</p>
-<p>
-<a href="./notebooks/Test Notebook.html">Test Notebook</a>
-</p>
-<p>
-<a href="./notebooks/Lichess.html">FastAI Chapter 1 Project Notebook</a>
-</p>
-<p>
-<a href="">FastAI Chapter 1 Project Summary</a>
-</p>
-
-
-
-</main> <!-- /main -->
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Project Summary'); return false;">
+Project Summary
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('fastai Chapter 1'); return false;">
+fastai Chapter 1
+</div>
+</div>
+<a href="./posts/Chapter1/Writeup/index.html">
+<div class="listing-description">
+TODO
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="./posts/Chapter1/Writeup/index.html">
+<div class="listing-date">
+Nov 30, 2023
+</div>
+<div class="listing-author">
+Matthew Agers
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
