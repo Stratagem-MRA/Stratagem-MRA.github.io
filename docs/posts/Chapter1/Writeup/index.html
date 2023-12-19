@@ -147,7 +147,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p><img src="thumbnail.png" class="img-fluid"> Chapter 1 of fast.ai focuses on the fundamentals of building a model. So my project today was to build a vision learning model that predicts chess player rankings based on the position of the pieces on the board in the midgame. The model itself was only six lines of code with the help of the fastai framework, but the notebook is quite a bit larger and takes a full day to run due to the size of the data set. However, now I have the data stored on my computer and I am really excited about its potential applications for future projects.</p>
+<p><img src="thumbnail.png" class="img-fluid"><br>
+Chapter 1 of fast.ai focuses on the fundamentals of building a model. So my project today was to build a vision learning model that predicts chess player rankings based on the position of the pieces on the board in the midgame. The model itself was only six lines of code with the help of the fastai framework, but the notebook is quite a bit larger and takes a full day to run due to the size of the data set. However, now I have the data stored on my computer and I am really excited about its potential applications for future projects.</p>
 <p>Ultimately, the model performed pretty poorly at the tail ends of the data and tended to predict towards the average. The data was normally distributed, with the average ranking around 1500. This happens for two reasons: 1) Most people are average at chess!, but also (and more problematically), 2) Every new player on Lichess is assigned a default ranking of 1500, and there is no indication in the data set whether a given player is new or not.</p>
 <p>I considered attempting to work around these issues in the data, but I suspect future chapters will provide methodologies to address these sorts of discrepancies.</p>
 <p><a href="../Notebook/Lichess.html">Notebook Blog Post</a><br>
