@@ -1,0 +1,7 @@
+/.quarto/
+/posts/
+/_site/
+/about.qmd
+/index.qmd
+/styles.css
+/_quarto.yml

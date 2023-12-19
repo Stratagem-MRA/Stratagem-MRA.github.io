@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/Chapter2/App/index.html",
       "/posts/Chapter1/Datablocks/index.html",
       "/posts/Chapter1/Multiprocessing/index.html",
       "/posts/Chapter1/Notebook/Lichess.html",
